@@ -1,0 +1,41 @@
+.rf_contact_widget .social-buttons {
+	margin: 0 0 10px 0;
+	display: inline-block;
+}
+.rf_contact_widget .social-buttons a {
+	margin: 1px 0 0 15px;
+	display: inline-block;
+	float: left;
+}
+.rf_contact_widget .social-buttons a:first-child {
+	margin-left: 0;
+}
+.rf_contact_widget .social-buttons a:hover {
+	margin-top: 0px;
+}
+.rf_contact_widget .phone, .rf_contact_widget .email, .rf_contact_widget .location {
+	width: 100%;
+	display: inline-block;
+	margin: 10px 0 0 0;
+}
+.rf_contact_widget .phone .icon {
+	background: url('../images/phone.png') 50% 50% no-repeat;
+}
+.rf_contact_widget .email .icon {
+	background: url('../images/email.png') 50% 50% no-repeat;
+}
+.rf_contact_widget .location .icon {
+	background: url('../images/pin.png') 50% 50% no-repeat;
+}
+.rf_contact_widget .icon {
+	height: 24px;
+	width: 24px;
+	display: inline-block;
+	float: left;
+}
+.rf_contact_widget .text {
+	display: inline-block;
+	float: left;
+	width: auto;
+	margin: 1px 0 0 10px;
+}

@@ -1,0 +1,3 @@
+<!-- Editing this will cause the theme to fail, if you would like the full version, it is only 10 dollars from hellyeahdude.com, come on, its really not that much money --!>
+<div class="clear"></div>
+<div class="footer2"><p>Content is copyright &#169; to <?php bloginfo('name'); ?>, 2008. | Dressed in the Thunderbolt theme by <a href="http://hellyeahdude.com">Hell Yeah Dude</a>. View the <a href="<?php bloginfo('stylesheet_url'); ?>">CSS</a></div>

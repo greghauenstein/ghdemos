@@ -1,0 +1,36 @@
+
+@import url('../font/CartoGothicStd/font.css');
+
+body { font: normal normal normal 12px/normal arial; color: #666; }
+
+h1{ font-size:34px; }
+h2{ font-size:30px; }
+h3{ font-size:26px; }
+h4{ font-size:20px; }
+h5{ font-size:18px; }
+h6{ font-size:14px; }
+
+h1, h2, h3, h4, h5, h6, #nav ul li a, blockquote cite {
+	font-family:  "CartoGothicStdRegular";
+}
+
+blockquote p {
+	font-family: "CartoGothicStdItalic";
+}
+
+a, #portfolio #filters a.current { color:#ff3131; }
+
+#sidebar .hb_flickr_widget .flickr_badge_image img:hover, #footer .hb_flickr_widget .flickr_badge_image img:hover { border-color:#ff3131; }
+
+a:hover, .entry h3.title a:hover, #post_content .meta .comment a:hover, .entry .meta .comment a:hover, #breadcrumb a:hover, #sidebar a:hover, #sidebar .hb_flickr_widget .flickr_badge_image img:hover, #footer .hb_flickr_widget .flickr_badge_image img:hover, #footer .hb_recentpost_widget .recentpost h5 a:hover, #sidebar .hb_tweet_widget #twitter_update_list li span a:hover, #footer .hb_tweet_widget #twitter_update_list li span a:hover, #comments .details .name span.date a:hover, #respond a:hover, ol.pinglist li a:hover, #portfolio .one_col h3 a:hover, #portfolio .one_col .comment a:hover, #portfolio h3.mini_title a:hover { color: #ff3131; }
+
+#nav ul li.current_page_item > a, #nav ul li.current_page_parent > a, #nav ul li.current-menu-item > a, #nav ul li.current-post-ancestor > a, #nav ul li.current-page-parent > a { background-color: #ff3131; }
+#nav ul li ul.children li.current_page_item > a, #nav ul li ul.sub-menu li.current_page_item > a { color: #ff3131!important; }
+
+.container_12 { background-color: rgba(255, 255, 255, 0.3); }
+
+#slide #sleft h1 { font-size: 34px; }
+#slide #sleft h2 { font-size: 20px; }
+
+#slide #sright #texture { background: transparent url(../images/textures/noisestrip.png) repeat 0 0; }
+
