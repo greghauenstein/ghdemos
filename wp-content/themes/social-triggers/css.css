@@ -1,0 +1,830 @@
+/*---:[ Thesis CSS reset ]:---*/
+* {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img, abbr, acronym, fieldset {
+	border: 0;
+}
+code {
+	line-height: 1em;
+}
+pre {
+	overflow: auto;
+	clear: both;
+}
+sub, sup {
+	line-height: 0.5em;
+}
+img, .wp-caption {
+	max-width: 100%;
+	height: auto;
+}
+iframe, video, embed, object {
+	display: block;
+	max-width: 100%;
+}
+img {
+	display: block;
+}
+.left, .alignleft, img[align="left"] {
+	display: block;
+	float: left;
+}
+.right, .alignright, img[align="right"] {
+	display: block;
+	float: right;
+}
+.center, .aligncenter, img[align="middle"] {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	float: none;
+	clear: both;
+}
+.block, .alignnone {
+	display: block;
+	clear: both;
+}
+.wp-smiley {
+	display: inline;
+}
+/*---:[ general styles and layout structure ]:---*/
+body {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	line-height: 26px;
+	color: #111111;
+	border-top: 5px solid #222222;
+	background-color: #FFFFFF;
+}
+a {
+	color: #8800C4;
+	text-decoration: none;
+}
+p a {
+	text-decoration: underline;
+}
+.container {
+	width: 897px;
+	margin: 0 auto;
+}
+.landing .container {
+	width: 585px;
+}
+.full_width {
+	min-width: 897px;
+}
+.columns, .columns > .content, .columns > .sidebar {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.columns > .content {
+	width: 585px;
+	float: left;
+}
+.columns > .sidebar {
+	float: right;
+	width: 312px;
+	padding-left: 52px;
+}
+/*---:[ nav menu ]:---*/
+.menu {
+	position: relative;
+	float: right;
+	z-index: 50;
+	list-style: none;
+}
+.menu li {
+	position: relative;
+	float: left;
+}
+.menu .sub-menu {
+	position: absolute;
+	display: none;
+	list-style: none;
+	z-index: 110;
+}
+.menu .sub-menu .sub-menu {
+	top: 0;
+	left: 11em;
+}
+.menu li:hover > .sub-menu {
+	display: block;
+}
+.menu .sub-menu li {
+	width: 11em;
+	clear: both;
+}
+.menu a, .menu_control {
+	display: block;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #DDDDDD;
+	background-color: #222222;
+	padding: 0.6em 1em;
+}
+.menu a:hover {
+	color: #FFFFFF;
+	background-color: #8800C4;
+}
+.menu_control {
+	display: none;
+	color: #DDDDDD;
+	background-color: #222222;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.menu .current-menu-item > a {
+	color: #EEEEEE;
+	background-color: #8800C4;
+	cursor: text;
+}
+/*---:[ site title ]:---*/
+#site_title {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 42px;
+	line-height: 1.32em;
+	font-weight: bold;
+	color: #111111;
+	border-bottom: 1px solid #DDDDDD;
+	margin-bottom: 26px;
+	padding: 39px 0;
+}
+.has_feature_box #site_title {
+	border-bottom: 0;
+	margin-bottom: 0;
+}
+.landing #site_title {
+	text-align: center;
+}
+.landing #site_title img {
+	margin: 0 auto;
+}
+#site_title a {
+	color: #111111;
+}
+#site_title a:hover {
+	color: #8800C4;
+}
+/*---:[ golden ratio typography with spaced paragraphs ]:---*/
+.grt, .grt h3 {
+	font-size: 16px;
+	line-height: 26px;
+}
+.grt .headline {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 26px;
+	line-height: 39px;
+	margin: 0;
+}
+.grt h2 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	line-height: 32px;
+	margin-top: 39px;
+	margin-bottom: 13px;
+}
+.grt .small, .grt .caption {
+	font-size: 13px;
+	line-height: 22px;
+}
+.grt .drop_cap {
+	font-size: 52px;
+	line-height: 1em;
+	margin-right: 0.15em;
+	float: left;
+}
+.grt p, .grt ul, .grt ol, .grt blockquote, .grt pre, .grt dl, .grt dd, .grt .center, .grt .block, .grt .caption, .grt .aligncenter, .grt .alignnone, .grt .left, .grt .alignleft, .grt .right, .grt .alignright, .grt .post_image, .grt .post_image_box, .grt .wp-caption, .grt .wp-post-image, .grt .alert, .grt .note, .headline_area, .post_list, .archive_intro .headline, .prev_next {
+	margin-bottom: 26px;
+}
+.grt ul, .grt ol, .grt .right, .grt .alignright, .grt .stack {
+	margin-left: 26px;
+}
+.grt .wp-caption img, .grt .post_image_box .post_image, .grt .thumb, .grt blockquote.right, .grt blockquote.left, .post_list li {
+	margin-bottom: 13px;
+}
+.grt ul ul, .grt ul ol, .grt ol ul, .grt ol ol, .wp-caption p, .grt .alert p:last-child, .grt .note p:last-child, .grt blockquote.right p, .grt blockquote.left p {
+	margin-bottom: 0;
+}
+.grt .left, .grt .alignleft {
+	margin-right: 26px;
+}
+.grt .caption {
+	margin-top: -13px;
+	color: #888888;
+}
+/*---:[ golden ratio pullquotes ]:---*/
+.grt blockquote.right, .grt blockquote.left {
+	font-size: 26px;
+	line-height: 36px;
+	width: 45%;
+}
+.grt blockquote.right, .grt blockquote.left { 
+	padding-left: 0;
+	border: 0;
+}
+/*---:[ button styles ]:---*/
+.post_edit, .previous_posts a, .next_posts a, .comment_footer a, .comment_nav a, .input_submit, #cancel-comment-reply-link {
+	display: inline-block;
+	line-height: 1em;
+	color: #888888;
+	border: 2px solid #EEEEEE;
+	background-color: #FFFFFF;
+	padding: 0.5em;
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	border-radius: 1em;
+}
+.post_edit:hover, .previous_posts a:hover, .next_posts a:hover, .comment_footer a:hover, .comment_nav a:hover, .input_submit:hover, #cancel-comment-reply-link:hover {
+	color: #8800C4;
+	border-color: #8800C4;
+	-webkit-transition: border-color 0.4s;
+	-moz-transition: border-color 0.4s;
+	transition: border-color 0.4s;
+}
+/*---:[ post box styles ]:---*/
+.post_box {
+	position: relative;
+	margin-bottom: 26px;
+}
+.headline_area {
+	color: #888888;
+}
+.headline, .headline a {
+	color: #111111;
+}
+.headline a:hover, .post_list .headline a {
+	color: #8800C4;
+	text-decoration: none;
+}
+.post_edit {
+	position: absolute;
+	top: 0.5em;
+	left: -52px;
+	font-size: 13px;
+}
+.twitter_profile:before {
+	content: '| ';
+}
+.full_page .post_content {
+	max-width: 585px;
+}
+.post_author a:hover, .post_content a, .post_cats a:hover, .post_tags a:hover, .twitter_profile a:hover, .post_list .headline a:hover {
+	text-decoration: underline;
+}
+.post_box h2, .post_box h3 {
+	color: #111111;
+}
+.post_box h3, .post_box dt {
+	font-weight: bold;
+}
+.post_box ul {
+	list-style-type: square;
+}
+.post_box blockquote {
+	color: #888888;
+	padding-left: 26px;
+	border-left: 1px solid #DDDDDD;
+}
+.post_box code {
+	font-family: Consolas, Monaco, Menlo, Courier, Verdana, sans-serif;
+}
+.post_box pre {
+	font-family: Consolas, Monaco, Menlo, Courier, Verdana, sans-serif;
+	background-color: #EEEEEE;
+	padding: 13px;
+	-webkit-tab-size: 4;
+	-moz-tab-size: 4;
+	tab-size: 4;
+}
+.post_box .frame, .post_box .post_image_box, .post_box .wp-caption {
+	border: 1px solid #DDDDDD;
+	background-color: #EEEEEE;
+	padding: 13px;
+}
+.wp-caption.aligncenter img {
+	margin-right: auto;
+	margin-left: auto;
+}
+.wp-caption .wp-caption-text .wp-smiley {
+	display: inline;
+	margin-bottom: 0;
+}
+.post_box .wp-caption p {
+	font-size: 13px;
+	line-height: 22px;
+}
+.post_box .author_description {
+	border-top: 1px dotted #DDDDDD;
+	padding-top: 26px;
+}
+.post_box .author_description_intro {
+	font-weight: bold;
+}
+.post_box .avatar {
+	float: right;
+	clear: both;
+	width: 61px;
+	height: 61px;
+	margin-left: 13px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+.post_box .author_description .avatar {
+	float: left;
+	width: 78px;
+	height: 78px;
+	margin-right: 13px;
+	margin-left: 0;
+}
+.post_box .post_cats, .post_box .post_tags {
+	color: #888888;
+}
+.post_box .alert, .post_box .note {
+	padding: 13px;
+}
+.post_box .alert {
+	background-color: #ff9;
+	border: 1px solid #e6e68a;
+}
+.post_box .note {
+	background-color: #EEEEEE;
+	border: 1px solid #DDDDDD;
+}
+.post_list {
+	position: relative;
+	list-style-type: none;
+}
+.post_list .num_comments {
+	display: inline-block;
+	margin-left: 13px;
+	line-height: 0.5em;
+}
+.post_list .post_edit {
+	top: -0.35em;
+	margin-top: 0.25em;
+}
+.landing .headline_area, .landing .signup {
+	text-align: center;
+}
+.post_box .signup {
+	border: 1px dotted #DDDDDD;
+	border-width: 1px 0 0 0;
+	margin: 26px 0;
+	padding: 26px 0 0;
+}
+.landing .signup {
+	border: 0;
+	margin: 0 0 26px;
+	padding: 0;
+}
+.post_box .signup p {
+	font-weight: bold;
+	margin-bottom: 13px;
+}
+.post_box .signup .input_text {
+	width: 40%;
+}
+.post_box .signup .input_submit {
+	font-size: 16px;
+	margin-left: 13px;
+}
+/*---:[ other post box styles ]:---*/
+.post_box .num_comments_link {
+	display: inline-block;
+	color: #888888;
+	text-decoration: none;
+	margin-bottom: 26px;
+}
+.post_box .num_comments_link:hover {
+	text-decoration: underline;
+}
+.num_comments {
+	font-size: 26px;
+	color: #111111;
+}
+/*---:[ feature box ]:---*/
+.feature_box {
+	position: relative;
+	border: 2px solid #DDDDDD;
+	border-width: 2px 0;
+	margin: 0 -26px 39px;
+	padding: 26px 26px 0 26px;
+}
+.feature_box .headline {
+	font-weight: bold;
+	border-bottom: 1px solid #DDDDDD;
+	background-color: #EEEEEE;
+	margin: -26px -26px 26px;
+	padding: 13px 26px;
+}
+.feature_box .post_edit {
+	top: 1.5em;
+	left: -3.5em;
+}
+.feature_box .post_content {
+	max-width: 585px;
+}
+.feature_box .thesis_email_form {
+	margin-bottom: 26px;
+}
+.feature_box .input_text {
+	width: 25%;
+	padding: 0.75em;
+}
+.feature_box .input_submit {
+	margin-left: 13px;
+	vertical-align: -11%;
+}
+/*---:[ misc. content elements ]:---*/
+.archive_intro {
+	border-bottom: 1px dotted #DDDDDD;
+}
+.prev_next {
+	clear: both;
+	color: #888888;
+}
+.prev_next .next_posts {
+	float: right;
+}
+.previous_posts, .next_posts {
+	display: block;
+}
+/*---:[ comments ]:---*/
+#comments {
+	margin-top: 52px;
+}
+.comments_intro {
+	color: #888888;
+	margin-bottom: 13px;
+}
+.comments_closed {
+	font-size: 13px;
+	line-height: 22px;
+	color: #888888;
+	margin-bottom: 26px;
+}
+.comment_list {
+	list-style-type: none;
+	margin-bottom: 52px;
+	border-top: 1px dotted #DDDDDD;
+}
+.comment {
+	border-bottom: 1px dotted #DDDDDD;
+	padding: 26px 0;
+}
+.children .comment {
+	list-style-type: none;
+	margin-top: 26px;
+	border-left: 1px solid #DDDDDD;
+	border-bottom: 0;
+	padding: 0 0 0 26px;
+}
+.children .bypostauthor {
+	background-color: transparent;
+	border-color: #8800C4;
+}
+.comment .comment_head {
+	margin-bottom: 13px;
+}
+.children .comment_head {
+	margin-bottom: 0;
+}
+.comment .comment_author {
+	font-weight: bold;
+}
+.comment_date {
+	font-size: 13px;
+	margin-left: 13px;
+	color: #888888;
+}
+.comment_date a {
+	color: #888888;
+}
+.comment_footer {
+	font-size: 13px;
+	line-height: 22px;
+	text-align: right;
+}
+.comment_head a:hover {
+	text-decoration: underline;
+}
+.comment_footer a {
+	margin-left: 13px;
+}
+.comment .avatar {
+	width: 52px;
+	height: 52px;
+	float: right;
+	margin-left: 13px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+.comment_nav {
+	padding: 13px 0 26px;
+}
+.comment_nav_bottom {
+	margin: -39px 0 52px;
+}
+.next_comments {
+	float: right;
+}
+/*---:[ inputs ]:---*/
+.input_text {
+	font-size: inherit;
+	line-height: 1em;
+	font-family: inherit;
+	font-weight: inherit;
+	color: #111111;
+	border: 1px solid #DDDDDD;
+	background-color: #EEEEEE;
+	padding: 0.35em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.input_text:focus {
+	border-color: #EEEEEE;
+	background-color: #FFFFFF;
+}
+textarea.input_text {
+	line-height: 26px;
+}
+.input_submit {
+	font-size: 20px;
+	font-family: inherit;
+	font-weight: bold;
+	cursor: pointer;
+	overflow: visible;
+}
+/*---:[ comment form ]:---*/
+#commentform {
+	margin: 52px 0;
+}
+.comment #commentform {
+	margin-top: 0;
+}
+.comment_form_title {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	line-height: 32px;
+	color: #111111;
+	border-bottom: 1px dotted #DDDDDD;
+	padding-bottom: 13px;
+}
+#commentform label {
+	display: block;
+}
+#commentform p {
+	margin-bottom: 13px;
+}
+#commentform p .required {
+	color: #d00;
+}
+.comment_moderated {
+	font-weight: bold;
+}
+#commentform .input_text {
+	width: 50%;
+}
+#commentform textarea.input_text {
+	width: 100%;
+}
+#cancel-comment-reply-link {
+	float: right;
+	font-size: 13px;
+}
+.login_alert {
+	font-weight: bold;
+	border: 1px solid #DDDDDD;
+	background-color: #EEEEEE;
+}
+/*---:[ sidebar ]:---*/
+.sidebar {
+	font-size: 13px;
+	line-height: 19px;
+}
+.sidebar .headline, .sidebar .email_form_title, .sidebar .widget_title {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 17px;
+	line-height: 25px;
+}
+.sidebar .email_form_title, .sidebar .widget_title {
+	margin-bottom: 10px;
+}
+.sidebar .input_submit {
+	font-size: inherit;
+	margin-bottom: 19px;
+}
+.sidebar p, .sidebar ul, .sidebar ol, .sidebar blockquote, .sidebar pre, .sidebar dl, .sidebar dd, .sidebar .headline, .sidebar .left, .sidebar .alignleft, .sidebar .right, .sidebar .alignright, .sidebar .center, .sidebar .aligncenter, .sidebar .block, .sidebar .alignnone {
+	margin-bottom: 19px;
+}
+.sidebar .left, .sidebar .alignleft {
+	margin-right: 19px;
+}
+.sidebar ul ul, .sidebar ul ol, .sidebar ol ul, .sidebar ol ol, .sidebar .right, .sidebar .alignright, .sidebar .stack {
+	margin-left: 19px;
+}
+.sidebar .widget, .sidebar .text_box, .sidebar .thesis_email_form, .sidebar .query_box {
+	margin-bottom: 38px;
+}
+.sidebar .thesis_email_form .input_text, .sidebar .widget li {
+	margin-bottom: 10px;
+}
+.sidebar .post_content, .sidebar .widget li ul, .sidebar .widget li ol {
+	margin-top: 10px;
+}
+.sidebar ul ul, .sidebar ul ol, .sidebar ol ul, .sidebar ol ol, .wp-caption p, .sidebar .post_excerpt p {
+	margin-bottom: 0;
+}
+.sidebar .search-form .input_text, .sidebar .thesis_email_form .input_text {
+	width: 100%;
+}
+.sidebar .query_box .post_author, .sidebar .query_box .post_date {
+	color: #888888;
+}
+.widget ul {
+	list-style-type: none;
+}
+.widget li a:hover {
+	text-decoration: underline;
+}
+.sidebar .widget, .sidebar .text_box, .sidebar .thesis_email_form, .sidebar .query_box {
+	border-bottom: 1px dotted #DDDDDD;
+}
+.sidebar .widget:last-child, .sidebar .text_box:last-child, .sidebar .thesis_email_form:last-child, .sidebar .query_box:last-child {
+	border-bottom: 0;
+}
+/*---:[ footer ]:---*/
+#footer {
+	border-top: 1px solid #DDDDDD;
+}
+.footer {
+	font-size: 13px;
+	line-height: 22px;
+	color: #888888;
+	text-align: center;
+	padding: 13px 0;
+}
+.footer a {
+	color: #888888;
+}
+.footer a:hover {
+	color: #111111;
+}
+/*---:[ media queries ]:---*/
+@media all and (max-width: 897px) {
+	.container, .landing .container {
+		width: auto;
+		max-width: 585px;
+	}
+	.columns > .content {
+		float: none;
+		width: auto;
+	}
+	.columns > .sidebar {
+		float: none;
+		width: auto;
+		border-top: 1px solid #DDDDDD;
+		padding: 26px 0 0 0;
+	}
+	.columns > .sidebar > * {
+		max-width: 312px;
+	}
+	.full_width {
+		min-width: 585px;
+	}
+	.menu_control {
+		display: block;
+		cursor: pointer;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.menu_control, .menu {
+		margin: 0 -26px;
+	}
+	.menu_control, .menu a {
+		padding: 0.8em 26px;
+	}
+	.menu {
+		display: none;
+		float: none;
+	}
+	.show_menu {
+		display: block;
+	}
+	.menu .sub-menu {
+		position: static;
+		display: block;
+		padding-left: 26px;
+	}
+	.menu li {
+		float: none;
+	}
+	.menu .sub-menu li {
+		width: auto;
+	}
+	.feature_box .alignright, .feature_box .alignleft {
+		float: none;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.feature_box .input_text {
+		width: 50%;
+	}
+}
+@media all and (max-width: 585px) {
+	.full_width {
+		min-width: 0;
+	}
+	#site_title, .feature_box, .columns > .sidebar, .post_box, .post_list, .prev_next, #comments, .footer {
+		padding-right: 26px;
+		padding-left: 26px;
+	}
+	.menu_control, .menu, .feature_box {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.frame, .post_image_box, .wp-caption {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+}
+@media all and (max-width: 450px) {
+	.menu_control, .menu a, #site_title, .feature_box, .feature_box .headline, .columns > .sidebar, .post_box, .post_list, .prev_next, #comments, .footer {
+		padding-right: 13px;
+		padding-left: 13px;
+	}
+	#site_title {
+		padding-top: 26px;
+		padding-bottom: 26px;
+	}
+	.feature_box .input_text {
+		width: 100%;
+	}
+	.feature_box .input_submit {
+		display: block;
+		margin: 13px 0 0 0;
+	}
+	.menu .sub-menu, .post_box blockquote, .children .comment {
+		padding-left: 13px;
+	}
+	.comments_closed, .login_alert {
+		margin-right: 13px;
+		margin-left: 13px;
+	}
+	.feature_box .headline {
+		margin-right: -13px;
+		margin-left: -13px;
+	}
+	.right, .alignright, img[align="right"], .left, .alignleft, img[align="left"] {
+		float: none;
+	}
+	.grt .right, .grt .left, .grt .alignright, .grt .alignleft, .grt blockquote.right, .grt blockquote.left {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.post_author:after {
+		content: 'a';
+		height: 0;
+		white-space: pre;
+		display: block;
+	}
+	.twitter_profile:before {
+		content: '';
+	}
+	.grt blockquote.right, .grt blockquote.left, #commentform .input_text, .sidebar .search-form .input_text, .post_box .signup .input_text, .sidebar .thesis_email_form .input_text {
+		width: 100%;
+	}
+	.post_box .signup .input_text {
+		margin-bottom: 13px;
+	}
+	.post_box .signup .input_submit {
+		margin-left: 0;
+	}
+	.comment_date {
+		display: none;
+	}
+}
+/*---:[ clearfix ]:---*/
+.columns:after, .menu:after, .post_box:after, .content .post_content:after, .author_description:after, .sidebar:after, .query_box:after, .prev_next:after, .comment_text:after, .comment_nav:after {
+	content: "."; display: block; height: 0; clear: both; visibility: hidden;
+}
